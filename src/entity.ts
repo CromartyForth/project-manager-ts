@@ -1,3 +1,5 @@
+import { Log } from "./log";
+
 export class Entity {
 
     private _id: number;
@@ -19,7 +21,11 @@ export class Entity {
 
     }
 
+    @Log()
+
     get title(): string {
+
+        Entity.wait(1572);
 
         return this._title;
 
@@ -36,4 +42,20 @@ export class Entity {
         return this._creationDate;
 
     }
+
+    private static wait(ms) {
+        
+        let start = Date.now();
+
+        let now = start;
+
+        while (now < start + ms) {
+
+            now = Date.now();
+            
+        }
+
+    }
+
+
 }

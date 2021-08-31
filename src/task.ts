@@ -1,10 +1,13 @@
 import {Entity} from "./entity";
 
-export class Task extends Entity {
+import { Completable } from "./completable";
+
+export class Task extends Entity implements Completable {
 
     private _completed: boolean;
 
     private _priority: number;
+
 
     get completed(): boolean {
 
