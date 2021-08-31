@@ -18,7 +18,7 @@ class Entity {
         return this._id;
     }
     get title() {
-        Entity.wait(1572);
+        Entity.wait(512);
         return this._title;
     }
     set title(title) {

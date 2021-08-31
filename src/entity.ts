@@ -25,7 +25,7 @@ export class Entity {
 
     get title(): string {
 
-        Entity.wait(1572);
+        Entity.wait(512);
 
         return this._title;
 
@@ -52,7 +52,7 @@ export class Entity {
         while (now < start + ms) {
 
             now = Date.now();
-            
+
         }
 
     }

@@ -13,3 +13,16 @@ sendCompletionEmail(bugFix);
 bugFix.completed = true;
 sendCompletionEmail(bugFix);
 console.log(bugFix);
+let tasks = [
+    new task_1.Task(1, "Buy milk"),
+    new task_1.Task(2, "Buy cheese"),
+    new task_1.Task(3, "Pay bills"),
+    new task_1.Task(4, "Clean the house"),
+];
+for (let i = 0; i < tasks.length; i++) {
+    let task = tasks[i];
+    console.log(task.title);
+}
+for (let task of tasks) {
+    console.log(task.title);
+}
